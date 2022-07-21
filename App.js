@@ -27,9 +27,10 @@ import COLORS  from "../AwesomeProject/src/consts/colors.js";
                     </Text>
 
                 </View>
-                <View>
 
-                </View>
+                            <Image source={require('../AwesomeProject/src/assests/IMG.jpg')}
+                        style={style.image3}
+                        />
 
             </View>
 
@@ -67,16 +68,28 @@ import COLORS  from "../AwesomeProject/src/consts/colors.js";
     },
 
     image2: {
-        height:220,
+        height:250,
         width:'100%',
         // borderBottomLeftRadius:100,
         borderTopRightRadius:100,
+        position:'absolute',
+        top:630
     },
     // container: {
     //     flex: 1,
     //     justifyContent: 'center',
     //     alignItems: 'center',
     //   },
+
+    image3: {
+        height:100,
+        width:100,
+        // borderBottomLeftRadius:100,
+        borderRadius:60,
+        position:'absolute',
+        top:100,
+        left:150
+    },
 
 
  });
