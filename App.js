@@ -1,5 +1,5 @@
  import React from "react";
- import {StyleSheet, SafeAreaView, Image,View,Text,StatusBar } from 'react-native';
+ import {StyleSheet, SafeAreaView, Image,View,Text,StatusBar, marquee } from 'react-native';
 // import { } from "react-native-web";
 import COLORS  from "../AwesomeProject/src/consts/colors.js";
 
@@ -17,12 +17,18 @@ import COLORS  from "../AwesomeProject/src/consts/colors.js";
                 <View>
                     <Text style={style.title}> Happy Birthday</Text>
                     <Text style={style.textStyle}> 
-                    
-                    uNkunkululu ukubusisile ngomunye umnyaka. 
-                    Take that opportunity with both hands....
-                    have a blessed day
-                    
+
+                    <marquee>
+                        Have yourself a beautiful
+                        Take that opportunity with both hands....
+                        have a blessed day
+                    </marquee> 
+
                     </Text>
+
+                </View>
+                <View>
+
                 </View>
 
             </View>
@@ -61,11 +67,17 @@ import COLORS  from "../AwesomeProject/src/consts/colors.js";
     },
 
     image2: {
-        height:490,
+        height:220,
         width:'100%',
-        borderBottomLeftRadius:100,
+        // borderBottomLeftRadius:100,
         borderTopRightRadius:100,
     },
+    // container: {
+    //     flex: 1,
+    //     justifyContent: 'center',
+    //     alignItems: 'center',
+    //   },
+
 
  });
 
