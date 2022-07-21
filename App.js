@@ -14,8 +14,8 @@ import COLORS  from "../AwesomeProject/src/consts/colors.js";
             />
 
             <View style={{paddingHorizontal:20, paddingTop:20}}>
-                <View>
-                    <Text style={style.title}> Happy Birthday</Text>
+                <View style={style.container} >
+                    <Text style={style.title}> Happy Birthday To You</Text>
                     <Text style={style.textStyle}> 
 
                     <marquee>
@@ -28,9 +28,8 @@ import COLORS  from "../AwesomeProject/src/consts/colors.js";
 
                 </View>
 
-                            <Image source={require('../AwesomeProject/src/assests/IMG.jpg')}
-                        style={style.image3}
-                        />
+                        <Image source={require('../AwesomeProject/src/assests/IMG.jpg')}
+                        style={style.image3}/>
 
             </View>
 
@@ -68,7 +67,7 @@ import COLORS  from "../AwesomeProject/src/consts/colors.js";
     },
 
     image2: {
-        height:250,
+        height:400,
         width:'100%',
         // borderBottomLeftRadius:100,
         borderTopRightRadius:100,
@@ -88,8 +87,17 @@ import COLORS  from "../AwesomeProject/src/consts/colors.js";
         borderRadius:60,
         position:'absolute',
         top:100,
-        left:150
+        left:150,
+        marginLeft:1,
+        alignItems:'center',
+        
     },
+
+    container: {
+        textAlign:'center',
+        alignItems:'center',
+        justifyContent:'center'
+    }
 
 
  });
